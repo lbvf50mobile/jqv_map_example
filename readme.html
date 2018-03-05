@@ -1,1 +1,9 @@
-<p>Hi<br>this is okay<br>q<br>I&#39;m here<br>One more time<br>I&#39;m really glad I&#39;m here<br>one more time<br>and one more time<br>yes</p>
+<p>Converting img into JQVmaps</p>
+<ol>
+<li><p>0hr22m Read JQVmaps (<a href="https://www.10bestdesign.com/jqvmap/">https://www.10bestdesign.com/jqvmap/</a>) docs and creat SVG file with <a href="https://vectr.com/">https://vectr.com/</a> </p>
+</li>
+<li><p>0hr30 Create converter.js script using(<a href="https://github.com/stadline/jqvmap-svgconverter)">https://github.com/stadline/jqvmap-svgconverter)</a>, it&#39;s converts SVG -&gt; json. Found that vertr.com create SVG with path (<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths">https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths</a>) wraped by <code>defs</code> (<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs</a>) that leads to empty <code>path:</code> property in output json. Have to fix it in editor.</p>
+</li>
+<li><p>0hr50 Create jqvmap example, from json create <code>jquery.vmap.gotham.js</code>. Found that <code>map.js</code> that stores json from <code>convertor.js</code>leads to <code>name</code> error on page. Rearange it using <code>jquery.vmap.world.js</code>. Now it fix great and create jsfiddle.</p>
+</li>
+</ol>
