@@ -1,6 +1,6 @@
 // https://www.npmjs.com/package/jqvmap-svgconverter
 var fs = require('fs')
-var svg = fs.readFileSync("map.svg",'utf8')
+var svg = fs.readFileSync("map2.svg",'utf8')
 var jqvmapSvgconverter = require("jqvmap-svgconverter")
 var options = jqvmapSvgconverter.convertString(svg);
 console.log(options)
