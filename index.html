@@ -1,7 +1,20 @@
 <html>
-    <h1>Start</h1>
-    <ul>
-        <li><a href="map.svg">First SVG</a> dose not available because ther a `def` in svg </li>
-        <li><a href="map2.svg">Second SVG (only path)</a> remove def and it's starts to work</li>
-    </ul>
+  <head>
+    <title>JQVMap - World Map</title>
+    <link href="dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({ map: 'world_en' });
+    });
+    </script>
+  </head>
+  <body>
+    <div id="vmap" style="width: 600px; height: 400px;"></div>
+  </body>
 </html>
+         
