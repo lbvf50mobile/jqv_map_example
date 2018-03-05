@@ -1,1 +1,1 @@
-[object Object]
+{"width":640,"height":640,"paths":{}}
