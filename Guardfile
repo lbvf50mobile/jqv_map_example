@@ -60,6 +60,10 @@ end
 #
 guard :shell do
   watch(/(.*).md/) do |m| 
-    `markdown #{m[1]}.md > #{m[1]}.html` 
+    `markdown #{m[1]}.md > _#{m[1]}.html`
+    `truncate -s 0  #{m[1]}.html` 
+    `cat _head.html >> #{m[1]}.html`
+    `cat _#{m[1]}.html >> #{m[1]}.html`
+    `cat _foot.html >> #{m[1]}.html`
   end
 end
