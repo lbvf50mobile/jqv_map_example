@@ -33,4 +33,6 @@ Still problem?
 After I add link to readme from index.html it start to work. do it?
 Not it dose not. Only index.html works.
 
+Now add sinatra: https://gist.github.com/willurd/5720255
+to use livereload.
 
